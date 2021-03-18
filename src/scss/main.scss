@@ -1,0 +1,85 @@
+$primary: rgb(45, 158, 124);
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  .swiper-container {
+    height: 40vmax;
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+
+    .swiper-slide:last-child {
+      background-position: bottom;
+    }
+
+    .swiper-pagination-bullet {
+      margin: 0 10px !important;
+      width: 10px;
+      height: 10px;
+      outline: none;
+    }
+  }
+}
+
+main {
+  padding: 5rem 0;
+
+  .card {
+    max-width: 500px;
+  }
+
+  i {
+    font-size: 3rem;
+  }
+
+  .why-us {
+    margin: 6rem 0 3rem;
+  }
+
+  img {
+    width: 150px;
+  }
+}
+
+.testimonials {
+  background: $primary;
+
+  .swiper-slide {
+    background: #fff;
+
+    .profile {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 70px;
+        border-radius: 50%;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: $primary;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+    .swiper-container {
+      height: 800px;
+    }
+  }
+}
